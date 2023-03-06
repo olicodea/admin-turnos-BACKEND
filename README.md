@@ -1,6 +1,4 @@
-<h1>Administrador de turnos - BACKEND - API REST</h1>
-****
-
+<h1 align="center">Administrador de turnos - BACKEND - API REST</h1>
 
 **Descripción:**
 ---
