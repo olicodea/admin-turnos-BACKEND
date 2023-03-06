@@ -1,8 +1,5 @@
 <h1 align="center">Administrador de turnos - BACKEND - API REST</h1>
 
-**Descripción:**
----
-
 API REST creada con Node JS y Express.
 Este proyecto se comenzó a desarrollar en vivo por el canal de twitch <a href="https://www.twitch.tv/void_oli" Target="_blank">void_oli</a> junto con la comunidad.
 
