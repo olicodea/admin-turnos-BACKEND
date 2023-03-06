@@ -3,7 +3,7 @@
 **Descripción:**
 
 API REST creada con Node JS y Express.
-Este proyecto se comenzó a desarrollar en vivo por el canal de twitch www.twitch.tv/void_oli junto con la comunidad.
+Este proyecto se comenzó a desarrollar en vivo por el canal de twitch <a href="https://www.twitch.tv/void_oli" target="_blank">void_oli</a> junto con la comunidad.
 
 El sistema ofrece una solución para administrar turnos en un micro-emprendimiento. Por lo tanto, en su versión 1 cuenta con registro de *Turnos* y *Clientes*.
 
