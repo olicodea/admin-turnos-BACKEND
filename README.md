@@ -25,3 +25,8 @@ Actualmente cuenta con endpoints para Listar los turnos, crearlos y buscar por i
 ---
 
 En la carpeta database, se encuentra una query para crear la base de datos, con datos iniciales y algunas consultas utiles. *(MySQL)*
+
+Gestión y planificación del proyecto:
+---
+
+[05-03-2023-Proyecto-Fullstack#1-Trello.pdf](https://github.com/olicodea/admin-turnos-FRONTEND/files/10894507/05-03-2023-Proyecto-Fullstack.1-Trello.pdf)
