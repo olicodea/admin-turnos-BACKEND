@@ -5,7 +5,7 @@ Este proyecto se comenzó a desarrollar en vivo por el canal de twitch <a href="
 
 El sistema ofrece una solución para administrar turnos en un micro-emprendimiento. Por lo tanto, en su versión 1 contará con registro de *Turnos* y *Clientes*.
 
-El repositorio del **FRONTEND** es https://github.com/olicodea/admin-turnos-FRONTEND
+En principio el repositorio del **FRONTEND** es https://github.com/olicodea/admin-turnos-FRONTEND
 
 **Estado del proyecto:**
 ---
