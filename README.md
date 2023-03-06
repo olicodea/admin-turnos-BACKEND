@@ -9,4 +9,16 @@ El sistema ofrece una solución para administrar turnos en un micro-emprendimien
 
 **Estado del proyecto:**
 
-E
+Actualmente cuenta con endpoints para Listar los turnos, crearlos y buscar por id.
+
+**Dependencias:**
+
+- express
+- mysql
+- cors
+- dotenv
+- nodemon *(cambiar a devDependencies)*
+
+**Base de datos:**
+
+En la carpeta database, se encuentra una query para crear la base de datos, con datos iniciales y algunas consultas utiles.
