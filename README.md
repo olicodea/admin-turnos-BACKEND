@@ -21,4 +21,4 @@ Actualmente cuenta con endpoints para Listar los turnos, crearlos y buscar por i
 
 **Base de datos:**
 
-En la carpeta database, se encuentra una query para crear la base de datos, con datos iniciales y algunas consultas utiles.
+En la carpeta database, se encuentra una query para crear la base de datos, con datos iniciales y algunas consultas utiles. *(MySQL)*
