@@ -1,6 +1,6 @@
 # CREAR LA BASE DE DATOS PELUQUERIA
 
-# CREATE DATABASE IF NOT EXISTS peluqueria;
+#CREATE DATABASE IF NOT EXISTS peluqueria;
 
 USE peluqueria;
 
@@ -30,13 +30,15 @@ CREATE TABLE Turno (
 );
 
 #CREAR CLIENTES
-INSERT INTO Cliente VALUES 
-	(null, "Juan", "Oliva", "21321321"),
+INSERT INTO Cliente VALUES (null, "Juan", "Oliva", "21321321"),
 	(null, "Guido", "Carda", "6576512"),
     (null, "Gni", "zah", "54354323");
     
 #LISTAR CLIENTES
-SELECT * FROM Cliente;
+SELECT id, nombre, apellido, telefono FROM Cliente;
+
+#BUSCAR CLIENTE POR ID
+SELECT id, nombre, apellido, telefono FROM Cliente WHERE id = 10;
 
 #CREAR ESTADOS
 INSERT INTO Estado VALUES
