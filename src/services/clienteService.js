@@ -13,7 +13,8 @@ export const listarClientes = () => {
 };
 
 export const crearCliente = (cliente) => {
-    const sql = `INSERT INTO Cliente VALUES (null, "${cliente.nombre}", "${cliente.apellido}", "${cliente.telefono}")`;
+    const sql = 
+        `INSERT INTO Cliente VALUES (null, "${cliente.nombre}", "${cliente.apellido}", "${cliente.telefono}")`;
     return new Promise((resolve, reject) => {
         connection.query(sql, function (error, result) {
             if (error) {

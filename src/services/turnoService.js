@@ -1,7 +1,8 @@
 import { connection } from "../database/connection.js";
 
 export const listarTurnos = () => {
-    const sql = `SELECT id, fecha, hora, idCliente, idEstado FROM Turno`;
+    const sql = 
+        `SELECT id, fecha, hora, idCliente, idEstado FROM Turno`;
     return new Promise((resolve, reject) => {
         connection.query(sql, function (error, result) {
             if (error) {
@@ -13,7 +14,8 @@ export const listarTurnos = () => {
 };
 
 export const crearTurno = (turno) => {
-    const sql = `INSERT INTO Turno VALUES (null, "${turno.fecha}", "${turno.hora}", "${turno.idCliente}", "${turno.idEstado}")`;
+    const sql = 
+        `INSERT INTO Turno VALUES (null, "${turno.fecha}", "${turno.hora}", "${turno.idCliente}", 1)`;
     return new Promise((resolve, reject) => {
         connection.query(sql, function (error, result) {
             if (error) {
