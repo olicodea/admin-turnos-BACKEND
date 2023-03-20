@@ -13,8 +13,7 @@ export const listarClientes = () => {
 };
 
 export const crearCliente = (cliente) => {
-    const sql = 
-        `INSERT INTO Cliente VALUES (null, "${cliente.nombre}", "${cliente.apellido}", "${cliente.telefono}")`;
+    const sql = `INSERT INTO Cliente VALUES (null, "${cliente.nombre}", "${cliente.apellido}", "${cliente.telefono}")`;
     return new Promise((resolve, reject) => {
         connection.query(sql, function (error, result) {
             if (error) {
@@ -26,13 +25,29 @@ export const crearCliente = (cliente) => {
 };
 
 export const buscarClientePorId = (id) => {
-    const sql = `SELECT id, nombre, apellido, telefono FROM Cliente WHERE id = ${id}`
+    const sql = `SELECT id, nombre, apellido, telefono FROM Cliente WHERE id = ${id}`;
     return new Promise((resolve, reject) => {
-        connection.query(sql, function(error, result){
-            if(error){
-                reject(error)
+        connection.query(sql, function (error, result) {
+            if (error) {
+                reject(error);
             }
-            resolve(result[0])
+            resolve(result[0]);
+        });
+    });
+};
+
+export const modificarCliente = (cliente) => {
+    const { id, nombre, apellido, telefono } = cliente;
+    const sql = `
+        UPDATE cliente 
+        SET nombre = "${nombre}", apellido = "${apellido}", telefono = "${telefono}"
+        WHERE id = ${id};
+    `;
+    return new Promise((resolve, reject) => {
+        connection.query(sql, function (error, result) {
+            if(error) reject(error);
+
+            resolve(result);
         })
     })
-}
+};

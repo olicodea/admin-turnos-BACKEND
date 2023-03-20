@@ -4,14 +4,17 @@ import * as clienteController from "../controller/clienteController.js";
 
 const router = express.Router();
 
+// Rutas Cliente
 router
     .get("/clientes", clienteController.listarClientes)
     .post("/clientes", clienteController.crearCliente)
     .get("/clientes/:id", clienteController.buscarClientePorId)
+    .put("/clientes/:id", clienteController.modificarCliente)
 
+// Rutas Turno 
+router
     .get("/", turnoController.listarTurnos)
     .get("/turnos", turnoController.listarTurnos)
     .get("/turnos/:id", turnoController.buscarTurnoPorId)
     .post("/turno", turnoController.crearTurno)
-
 export { router };
