@@ -16,5 +16,6 @@ router
     .get("/", turnoController.listarTurnos)
     .get("/turnos", turnoController.listarTurnos)
     .get("/turnos/:id", turnoController.buscarTurnoPorId)
+    .get("/turnosCliente/:id", turnoController.listarTurnosPorClienteId)
     .post("/turno", turnoController.crearTurno)
 export { router };

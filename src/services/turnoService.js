@@ -40,3 +40,14 @@ export const buscarTurnoPorId = (id) => {
         });
     });
 };
+
+export const listarTurnosPorClienteId = (idCliente) => {
+    const sql = `SELECT id, fecha, hora, idEstado FROM turno WHERE idCliente = ${idCliente}`;
+    return new Promise((resolve, reject) => {
+        connection.query(sql, function (error, result) {
+            if(error) reject(error);
+            
+            resolve(result);
+        })
+    })
+}

@@ -26,3 +26,12 @@ export const buscarTurnoPorId = async (req, res) => {
         res.send({ status: "ERROR", message: error.message });
     }
 };
+
+export const listarTurnosPorClienteId = async (req, res) => {
+    try {
+        const turnos = await turnoService.listarTurnosPorClienteId(req.params.id);
+        res.send({status: "OK", data: turnos});
+    } catch (error) {
+        res.send({status: "ERROR", message: error.message})
+    }
+}
